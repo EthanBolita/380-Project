@@ -5,22 +5,22 @@ class Test {
     
 }
 public class shoppingCart{
-   string product;
+   String product;
    double productCost;
    int quantity;
    public shoppingCart(String product, double productCost, int quantity){
 this.product=product;
-this.productCost=product;
+this.productCost=productCost;
 this.quantity=quantity;
    }
 }
 private class creditCard{
-   string customerName;
-   string cardNumber;
+   String customerName;
+   String cardNumber;
    int CCV;
-   string expDate;
-   string address;
-   string email;
+   String expDate;
+   String address;
+   String email;
 
 
   /*setEmail;
@@ -31,10 +31,10 @@ private class creditCard{
 
 public class manager{
    //inventory;
-   string managerName;
-   string managerAddress;
-   string login;
-   string password;
+   String managerName;
+   String managerAddress;
+   String login;
+   String password;
 
 
 }
@@ -48,9 +48,9 @@ public class product{
    double priceOfShirt;
    double priceOfSweats;
    double priceOfSweater;
-   string nameOfShirt = "100% cotton shirts";
-   string nameOfSweats ="Cargo Sewatpants";
-   string nameOfSweater = "Thick cotton hoodie";
+   String nameOfShirt = "100% cotton shirts";
+   String nameOfSweats ="Cargo Sewatpants";
+   String nameOfSweater = "Thick cotton hoodie";
 
 }
    

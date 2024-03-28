@@ -57,6 +57,7 @@ public class product{
    char color;
    int quanitiy;
    double price;
+   char size;
    String type;
   
   public double getPrice(){
@@ -77,6 +78,10 @@ public class product{
 
   public int getId(){
     return id;
+  }
+
+  public char getSize(){
+    return size;
   }
 
 }

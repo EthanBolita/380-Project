@@ -5,7 +5,7 @@ class Test {
     
 }
 public class shoppingCart{
-ArrayList<product> producst= new ArrayList<product>();
+ArrayList<product> products= new ArrayList<product>();
    double productCost;
    double totalCost;
    public shoppingCart(String product, double productCost, int quantity){
@@ -21,34 +21,26 @@ private class creditCard{
    int month;
    int year;
   
-  if (cardNumber.matches ("[0-9]+") && cardNumber.length == 11)
-  cardNumber=cardNumber;
-  else
-  {
+  if (cardNumber.matches ("[0-9]+") && cardNumber.length == 11){
+    cardNumber=cardNumber;
+  }else{
       System.out.println("Invalid. Try again");
   }
-  if (customerName.matches("[a-zA-Z]+"))
+  if (customerName.matches("[a-zA-Z]+")){
   customerName=customerName;
-  else
-  {
+  }else{
       System.out.println("Invalid. Try again");
   }
-   if (CCV.matches ("[0-9]+") && CCV.length == 2)
+   if (CCV.matches ("[0-9]+") && CCV.length == 2){
   CCV=CCV;
-  else
-  {
+  }else{
       System.out.println("Invalid. Try again");
   }
   if (month > 0 && month < 13){
       month=month;
-      else{
+      }else{
           System.out.println("Invalid. Try again");
       }
-  }
-  
-
-
- 
 }
 
 public class manager{
@@ -61,11 +53,31 @@ public class manager{
 
 }
 public class product{
+   int id;
    char color;
    int quanitiy;
    double price;
    String type;
   
+  public double getPrice(){
+    return price;
+  }
+
+  public char getColor(){
+    return color;
+  }
+
+  public int getQuanitiy(){
+    return quanitiy;
+  }
+
+  public String getType(){
+    return type;
+  }
+
+  public int getId(){
+    return id;
+  }
 
 }
    
@@ -86,5 +98,4 @@ public class Inventory{
    int b = numOfSweats;
    int c = numOfSweaters;
    System.out.println("The total number of products is " + Integer.sum(a, b, c)); 
-  }
-} 
+  } 

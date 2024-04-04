@@ -48,7 +48,7 @@ public class manager{
    String managerAddress;
    String login;
    String password;
-   myInventory=new Inventory();
+   Inventory myInventory=new Inventory();
 
 
 }

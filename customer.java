@@ -4,16 +4,16 @@ public class cutomer{
    String card;
    String email;
 
-public void setName(name){
+public void setName(String name){
     this.name=name;
 }
-public void setAddress(address){
+public void setAddress(String address){
     this.address=address;
 }
-public void setCard(card){
+public void setCard(String card){
     this.card=card;
 }
-public void setEmail(email){
+public void setEmail(String email){
     this.email=email;
 }
 

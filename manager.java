@@ -11,5 +11,4 @@ public static void main(String[] args){
     Inventory myInventory =new Inventory();
     myInventory.add(0);
     myInventory.remove(0);
-
 }

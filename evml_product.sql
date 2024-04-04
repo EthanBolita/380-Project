@@ -37,6 +37,7 @@ CREATE TABLE `product` (
 
 LOCK TABLES `product` WRITE;
 /*!40000 ALTER TABLE `product` DISABLE KEYS */;
+INSERT INTO `product` VALUES (1,'small','sweater','black',24.99),(2,'small','sweater','gray',24.99),(3,'small','sweater','red',24.99),(4,'medium','sweater','black',24.99),(5,'medium','sweater','gray',24.99),(6,'medium','sweater','red',24.99),(7,'large','sweater','black',24.99),(8,'large','sweater','gray',24.99),(9,'large','sweater','red',24.99),(10,'small','shirt','black',15.99),(11,'small','shirt','gray',15.99),(12,'small','shirt','red',15.99),(13,'medium','shirt','black',15.99),(14,'medium','shirt','gray',15.99),(15,'medium','shirt','red',15.99),(16,'large','shirt','black',15.99),(17,'large','shirt','gray',15.99),(18,'large','shirt','red',15.99),(19,'small','pants','black',19.99),(20,'small','pants','gray',19.99),(21,'medium','pants','black',19.99),(22,'medium','pants','gray',19.99),(23,'large','pants','black',19.99),(24,'large','pants','gray',19.99);
 /*!40000 ALTER TABLE `product` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-04-02 15:39:00
+-- Dump completed on 2024-04-04 16:00:59

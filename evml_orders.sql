@@ -16,32 +16,26 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `customer`
+-- Table structure for table `orders`
 --
 
-DROP TABLE IF EXISTS `customer`;
+DROP TABLE IF EXISTS `orders`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `customer` (
-  `customer_id` int DEFAULT NULL,
-  `customer_password` varchar(50) DEFAULT NULL,
-  `first_name` varchar(50) DEFAULT NULL,
-  `last_name` varchar(50) DEFAULT NULL,
-  `card_number` varchar(50) DEFAULT NULL,
-  `address` varchar(100) DEFAULT NULL,
-  `email` varchar(50) DEFAULT NULL,
-  `phone_number` varchar(15) DEFAULT NULL
+CREATE TABLE `orders` (
+  `order_id` int DEFAULT NULL,
+  `customer_name` varchar(50) DEFAULT NULL,
+  `product_name` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `customer`
+-- Dumping data for table `orders`
 --
 
-LOCK TABLES `customer` WRITE;
-/*!40000 ALTER TABLE `customer` DISABLE KEYS */;
-INSERT INTO `customer` VALUES (1,'abcd','John','Doe','1234567812345678','12345 Main Street','johndoe@gmail.com','8181234567'),(2,'password','Jane','Doe','8765432187654321','54321 Main Street','janedoe@gmail.com','8181237654');
-/*!40000 ALTER TABLE `customer` ENABLE KEYS */;
+LOCK TABLES `orders` WRITE;
+/*!40000 ALTER TABLE `orders` DISABLE KEYS */;
+/*!40000 ALTER TABLE `orders` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -53,4 +47,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-04-04 16:00:59
+-- Dump completed on 2024-04-04 15:27:29

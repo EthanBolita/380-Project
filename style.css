@@ -48,6 +48,10 @@ p{
 .col-2{
     flex-basis: 50%;
     min-width: 300px;
+    display: grid;
+    place-items: center;
+    
+   
 }
 .col-2 img{
     max-width: 100%;
@@ -86,4 +90,21 @@ p{
     max-width: 250px;
     max-height: 150px;
     margin-bottom: 30px ;
+}
+
+.card{
+    aspect-ratio: 5/7;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+}
+
+
+.big-card{
+    width: 20vmin;
+    border-radius: 1vmin;
+}
+
+.little-card{
+    width: 8vmin;
+    border-radius: 2vmin;
 }

@@ -13,39 +13,39 @@ public class search{
         this.color=color;
         this.price=price;
     }
-public int getProductID(){
-    return productID;
-}
-public char getSize(){
-    return size;
-}
+    public int getProductID(){
+        return productID;
+    }
+    public char getSize(){
+        return size;
+    }
 
-public String getStyle(){
-    return style;
-}
+    public String getStyle(){
+        return style;
+    }
 
-public String getColor(){
-    return color;
-}
+    public String getColor(){
+        return color;
+    }
 
-public double getPrice(){
-    return price;
-}
+    public double getPrice(){
+        return price;
+    }
 
-public void setProductID(){
-    this.productID=productID;
-}
-public void setSize(){
-    this.size=size;
-}
-public void setStyle(){
-    this.style=style;
-}
-public void setColor(){
-    this.color=color:
-}
-public void setPrice(){
-    this.price=price;
-}
+    public void setProductID(){
+        this.productID=productID;
+    }
+    public void setSize(){
+        this.size=size;
+    }
+    public void setStyle(){
+        this.style=style;
+    }
+    public void setColor(){
+        this.color=color:
+    }
+    public void setPrice(){
+        this.price=price;
+    }
 
 }

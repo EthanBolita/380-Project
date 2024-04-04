@@ -8,7 +8,7 @@ public class manager{
 
 }
 public static void main(String[] args){
-    myInventory =new Inventory();
+    Inventory myInventory =new Inventory();
     myInventory.add(0);
     myInventory.remove(0);
 

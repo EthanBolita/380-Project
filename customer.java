@@ -20,7 +20,7 @@ public void setEmail(email){
 
 
 public static void main(String[] args){
-    myShoppingCart= new myShoppingCart();
+    shoppingCart myShoppingCart= new shoppingCart();
 }
 
 }

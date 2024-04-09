@@ -1,4 +1,4 @@
-import.java.util.ArrayList;
+import java.util.*; 
 public class shoppingCart{
   ArrayList<product> products= new ArrayList<product>();
   double productCost;
@@ -9,7 +9,9 @@ public class shoppingCart{
     this.quantity=quantity;
   }
 
-  public calculateTotal(products){
+  public void calculateTotal(){
+
+  }
     
   public static void main(String[] args) {
   } 

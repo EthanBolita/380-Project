@@ -42,7 +42,7 @@ public class search{
         this.style=style;
     }
     public void setColor(String color){
-        this.color=color:
+        this.color=color;
     }
     public void setPrice(double price){
         this.price=price;

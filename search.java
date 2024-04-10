@@ -1,20 +1,13 @@
 public class search{
-    int  productID;
     String size;
     String style;
     String color;
-    double price;
+    String input;
 
-
-    public search(int  productID, String size, String style, String color, double price ){
-        this.productID= productID;
+    public search(String size, String style, String color){
         this.size=size;
         this.style=style;
         this.color=color;
-        this.price=price;
-    }
-    public int getProductID(){
-        return productID;
     }
     public String getSize(){
         return size;
@@ -28,13 +21,7 @@ public class search{
         return color;
     }
 
-    public double getPrice(){
-        return price;
-    }
 
-    public void setProductID(int productID){
-        this.productID=productID;
-    }
     public void setSize(String size){
         this.size=size;
     }
@@ -43,9 +30,6 @@ public class search{
     }
     public void setColor(String color){
         this.color=color;
-    }
-    public void setPrice(double price){
-        this.price=price;
     }
 
 }

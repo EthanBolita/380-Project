@@ -1,0 +1,37 @@
+import java.sql.*;
+import java.util.Properties;
+public class DatabaseExample {
+    public static void main(String[] args) {
+        // JDBC URL, username, and password for your database
+        String url = "jdbc:mysql://localhost:3306/EVML";
+        String username = "root";
+        String password = "Cristianocr7!";
+
+        // Establish connection
+        try (Connection connection = DriverManager.getConnection(url, username, password)) {
+            // Create a statement
+            Statement statement = connection.createStatement();
+
+
+
+            // Execute a query
+            String sql = "SELECT * FROM product";
+            ResultSet resultSet = statement.executeQuery(sql);
+
+            // Process the results
+            while (resultSet.next()) {
+                // Retrieve data from the result set
+                int id = resultSet.getInt("product_id");
+                String name = resultSet.getString("size");
+                String style=resultSet.getString("style");
+                String color =resultSet.getString("color");
+                Double price=resultSet.getDouble("price");
+
+                // Do something with the data
+                System.out.println("ID: " + id + ", Name: " + name + " ,Style " + style + " , color " + color + " ,Price: " + price);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+}

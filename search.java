@@ -1,8 +1,9 @@
+import java.util.Scanner;
+
 public class search{
     String size;
     String style;
     String color;
-    String input;
 
     public search(String size, String style, String color){
         this.size=size;
@@ -32,4 +33,37 @@ public class search{
         this.color=color;
     }
 
+    public static void splitString(String input, search tem){
+        String [] words=input.split(" ");
+        for(String word : words){
+            if(word.compareTo("red")==0){
+                tem.setColor(word);
+            }else if(word.compareTo("gray")==0){
+                tem.setColor(word);
+            }else if(word.compareTo("black")==0){
+                tem.setColor(word);
+            }else if(word.compareTo("small")==0){
+                tem.setSize(word);
+            }else if(word.compareTo("medium")==0){
+                tem.setSize(word);
+            }else if(word.compareTo("large")==0){
+                tem.setSize(word);
+            }else if(word.compareTo("sweater")==0){
+                tem.setStyle(word);
+            }else if(word.compareTo("sweats")==0){
+                tem.setStyle(word);
+            }else if(word.compareTo("shirt")==0){
+                tem.setStyle(word);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        search temp=new search("1","2","3");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter string");
+        String input=sc.nextLine();
+        splitString(input, temp);
+        System.out.println(temp.getSize()+temp.getColor()+temp.getStyle());
+    }
 }

@@ -30,6 +30,10 @@ public class DatabaseExample {
                 // Do something with the data
                 System.out.println("ID: " + id + ", Name: " + name + " ,Style " + style + " , color " + color + " ,Price: " + price);
             }
+
+            public static Connection getConnection() throws SQLException {
+        return DriverManager.getConnection(URL, USER, PASSWORD);
+    }
         } catch (SQLException e) {
             e.printStackTrace();
         }

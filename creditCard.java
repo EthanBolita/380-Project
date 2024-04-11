@@ -4,7 +4,8 @@ private class creditCard{
    String CCV;
    int month;
    int year;
-  
+   int age;
+  //bigbrrr
   public void verify(){
     if (cardNumber.matches ("[0-9]+") && cardNumber.length() == 11){
       cardNumber=cardNumber;

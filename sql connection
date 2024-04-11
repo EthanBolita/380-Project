@@ -32,7 +32,8 @@ public class DatabaseExample {
             }
 
             public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(url, username, password);
+                con = DriverManager.getConnection(url, username, password);
+        return con;
     }
         } catch (SQLException e) {
             e.printStackTrace();

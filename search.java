@@ -50,7 +50,7 @@ public class search{
                 tem.setSize(word);
             }else if(word.compareTo("sweater")==0){
                 tem.setStyle(word);
-            }else if(word.compareTo("sweats")==0){
+            }else if(word.compareTo("pants")==0){
                 tem.setStyle(word);
             }else if(word.compareTo("shirt")==0){
                 tem.setStyle(word);

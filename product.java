@@ -39,4 +39,9 @@ public class product{
     return size;
   }
 
+  public String toString(){
+    String item="ID: "+id+" Style: "+type+" Color: "+color+" Size: "+size+" Price: "+price;
+    return item;
+  }
+
 }

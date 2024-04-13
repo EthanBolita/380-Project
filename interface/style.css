@@ -37,11 +37,19 @@ a{
 p{
     color: #555;
 }
+.header{
+    background: radial-gradient(#f95a5a,rgb(69, 69, 69)
+    );
+}
+.header .row{
+    margin-top: 70px;
+}
 .container{
-    max-width: 1300px;
+    max-width: 1;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
+    
 }
 .navbar .search{
     position: relative;
@@ -110,10 +118,10 @@ p{
 }
 .col-2 .card{
     max-width: 100%;
-    padding: 50px 0;
+    padding: 6% 3%;
 }
 .col-2 h1{
-    padding-top: 75px;
+    padding-top: 20%;
     font-size: 75px;
     line-height: 100px;
     margin: 25px 0;
@@ -130,17 +138,7 @@ p{
 .btn:hover{
  background: #563434;
 }
-.header{
-    background: radial-gradient(#f95a5a,rgb(69, 69, 69)
-    );
-}
-.header .row{
-    margin-top: 70px;
-}
-.categories{
-    margin: 70px 0;
 
-}
 .col-3{
     flex-basis: 30%;
     max-width: 250px;
@@ -169,13 +167,13 @@ p{
 }
 
 .big-card:nth-child(2){
-    background-image: url(/Images/sweats\ fit.jpg);
+    background-image: url(Images/sweats\ fit.jpg);
     transform: translateX(-100%) rotate(-1deg);
 
 }
 
 .big-card:nth-child(4){
-    background-image: url(/Images/woman\ on\ car.jpg);
+    background-image: url(Images/woman\ on\ car.jpg);
     background-size: cover;
     background-position: center;
     transform: translateX(-90%) rotate(2deg);
@@ -183,34 +181,34 @@ p{
 
 .big-card:nth-child(6){
     transform: translateX(-86%) rotate(-3deg);
-    background-image: url(/Images/bballfit.jpg);
+    background-image: url(Images/bballfit.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .big-card:nth-child(8){
-    background-image: url(/Images/proclub.jpeg);
+    background-image: url(Images/proclub.jpeg);
     background-size: cover;
     background-position: center;
     transform: translate(-84%, 3%) rotate(5deg);
 }
 .little-card:nth-child(1){
-    background-image: url(/Images/orange\ shorts.jpg);
+    background-image: url(Images/orange\ shorts.jpg);
     background-size: cover;
     background-position: center;
 }
 .little-card:nth-child(3){
-    background-image: url(/Images/red\ fit.jpg);
+    background-image: url(Images/red\ fit.jpg);
     background-size: cover;
     background-position: center;
 }
 .little-card:nth-child(5){
-    background-image: url(/Images/grey\ sweater.jpg);
+    background-image: url(Images/grey\ sweater.jpg);
     background-size: cover;
     background-position: center;
 }
 .little-card:nth-child(7){
-    background-image: url(/Images/blue\ sweats.jpg);
+    background-image: url(Images/blue\ sweats.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -233,16 +231,16 @@ p{
     transform: translate(100%, -120%) rotate(-15deg);
 }
 .card-group:hover > .little-card:nth-child(3){
-    transform: translate(70%, 210%) rotate(18deg);
+    transform: translate(70%, 175%) rotate(18deg);
 }
 .card-group:hover > .little-card:nth-child(5){
     transform: translate(-200%, -120%) rotate(15deg);
 }
 .card-group:hover > .little-card:nth-child(7){
-    transform: translate(-300%, 215%) rotate(-18deg);
+    transform: translate(-200%, 175%) rotate(-18deg);
 }
 .centerText{
-    padding: 200px;
-    
+    padding-top: 30%;
+    margin-left: 50%;
     
 }

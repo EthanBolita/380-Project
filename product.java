@@ -1,22 +1,31 @@
 public class product{
    int id;
-   char color;
-   int quanitiy;
+   String color;
+   //int quanitiy;
    double price;
-   char size;
+   String size;
    String type;
+
+  public product(int id, String color, /*int quanitiy,*/ double price, String size, String type){
+    this.id=id;
+    this.color=color;
+    //this.quantity=quantity;
+    this.price=price;
+    this.size=size;
+    this.type=type;
+  }
   
   public double getPrice(){
     return price;
   }
 
-  public char getColor(){
+  public String getColor(){
     return color;
   }
 
-  public int getQuanitiy(){
+  /*public int getQuanitiy(){
     return quanitiy;
-  }
+  }*/
 
   public String getType(){
     return type;
@@ -26,7 +35,7 @@ public class product{
     return id;
   }
 
-  public char getSize(){
+  public String getSize(){
     return size;
   }
 

@@ -33,29 +33,46 @@ public class search{
         this.color=color;
     }
 
-    public static void splitString(String input, search tem){
+    public void splitString(String input){
         String [] words=input.split(" ");
         for(String word : words){
             if(word.compareTo("red")==0){
-                tem.setColor(word);
-            }else if(word.compareTo("gray")==0){
-                tem.setColor(word);
+                color=word;
+            }else if(word.compareTo("gray")==0||word.compareTo("grey")==0){
+                if(word.compareTo("grey")==0){
+                    word="gray";
+                }
+                color=word;
             }else if(word.compareTo("black")==0){
-                tem.setColor(word);
+                color=word;
             }else if(word.compareTo("small")==0){
-                tem.setSize(word);
+                size=word;
             }else if(word.compareTo("medium")==0){
-                tem.setSize(word);
+                size=word;
             }else if(word.compareTo("large")==0){
-                tem.setSize(word);
+                size=word;
             }else if(word.compareTo("sweater")==0){
-                tem.setStyle(word);
+                style=word;
             }else if(word.compareTo("pants")==0){
-                tem.setStyle(word);
+                style=word;
             }else if(word.compareTo("shirt")==0){
-                tem.setStyle(word);
+                style=word;
             }
         }
+    }
+
+    public String toString(){
+        String value="";
+        if(size.equals("small")==true||size.equals("medium")==true||size.equals("large")==true){
+            value+=size+" ";
+        }
+        if(color.equals("red")==true||color.equals("gray")==true||color.equals("black")==true){
+            value+=color+" ";
+        }
+        if(style.equals("shirt")==true||style.equals("sweater")==true||style.equals("pants")==true){
+            value+=style+" ";
+        }
+        return value;
     }
 
     public static void main(String[] args) {
@@ -63,7 +80,9 @@ public class search{
         Scanner sc = new Scanner(System.in);
         System.out.println("enter string");
         String input=sc.nextLine();
-        splitString(input, temp);
-        System.out.println(temp.getSize()+temp.getColor()+temp.getStyle());
+        input=input.toLowerCase();
+        temp.splitString(input);
+        //System.out.println(temp.getSize()+" "+temp.getColor()+" "+temp.getStyle()+" ");
+        System.out.println(temp.toString());
     }
 }

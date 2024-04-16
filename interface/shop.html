@@ -1,69 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Shop</title>
+    <title>VELM.co</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleShop.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
-<style>
-    .spropduct{
-        margin-left: 10%;
-        padding-top: 5%;
-    }
-
-    .small-img-group{
-        display: flex;
-        
-    }
-    .small-img-col{
-        flex-basis: 22%;
-        margin-right:-5%;
-        
-        cursor: pointer;
-    }
-    .details{
-        
-        scale: 150%;
-        margin-left: -80%;
-       
-        
-    }
-    .prodDetails{
-        margin-left: 1%;
-        
-    }
-    .prodName{
-        padding-top: 4%;
-        padding-bottom: 4%;
-    }
-    .spropduct select{
-        display: block;
-        padding: 5px 10px;
-    }
-    .spropduct input{
-        width: 50px;
-        padding-left: 10px;
-        font-size: 16px;
-        margin-top: 10px;
-        margin-right: 10px;
-    }
-    .cartBtn{
-    display: inline-block;
-    background: #000000;
-    color: #fff;
-    padding: 8px 30px;
-    margin: 15px 0;
-    border-radius: 10px;
-    transition: background 0.5s;
-}
-.cartBtn:hover{
- background: #563434;
-}
-</style>
-
 </head>
 <body>
     <div class="header">
@@ -74,8 +18,8 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Products</a></li> 
-                        <li><a href="">About</a></li> 
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Shop.html">Products</a></li>  
                         <li><a href="">Contact Us</a></li> 
                         <li><a href="">My Account</a></li>
                     </ul>
@@ -112,69 +56,65 @@
             searchBtn.classList.remove('active');
         }
     </script>
-
-    <section class="spropduct">
+    <h1>Shop our products:</h1>
+    <main>
         
-        <div class="row">
-            <div class="col-2">
-                <div class="mainpic">
-                    <img src="Images/blue sweats.jpg" id="mainpic"
-                    width="50%"
-                    height="100%">
-                </div>
-                
-
-                <div class="small-img-group">
-                    <div class="small-img-col">
-                        <img src="Images/blue sweats.jpg" class="small-img"
-                        width="70%"
-                        >
-                    </div>
-                    <div class="small-img-col">
-                        <img src="Images/grey sweats.jpg" class="small-img"
-                        width="70%"
-                        >
-                    </div>
-                    <div class="small-img-col">
-                        <img src="Images/black sweats.jpg" class="small-img"
-                        width="70%"
-                        >
-                    </div>
-                </div>
+        <div class="card1">
+            <div class="image">
+                <img src="Images/blue sweats.jpg" alt="">
             </div>
-            <div class="col-2">
-                
-                <div class="details">
-                    <h6>Home / Classic Sweatpants</h6>
-                    <h3 class="prodName">Unisex Classic Sweatpants</h3>
-                    <h2>$30.00</h2>
-                    <select name="sizes" id="sizes">
-                        <option>Select Size</option>
-                        <option>Small</option>
-                        <option>Medium</option>
-                        <option>Large</option>
-                    </select>
-                    <input type="number" value="1">
-                    <button class="cartBtn">Add to Cart</button>
-                    <h4 class="prodDetails">Product Details</h4>
-                    <span>These cargo style sweatpants with elastic waistband and tapered ankle are made for warmth and style.</span>
-                </div>
+            <div class="caption">
+                <p class="rate">
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon type='solid' name='star'></box-icon>
+                </p>
+                <p class="productName">Classic Sweatpants</p>
+                <p class="price">$30.00</p>
             </div>
+            <button class="buy">Buy Now</button>
+            
         </div>
-    </section>
-    <script>
-        var mainpic = document.getElementById('mainpic');
-        var smallpic = document.getElementsByClassName('small-img');
-
-        smallpic[0].onclick = function(){
-            mainpic.src=smallpic[0].src;
-        }
-        smallpic[1].onclick = function(){
-            mainpic.src=smallpic[1].src;
-        }
-        smallpic[2].onclick = function(){
-            mainpic.src=smallpic[2].src;
-        }
-    </script>
+        <div class="card2">
+            <div class="image">
+                <img src="Images/grey sweater.jpg" alt="">
+            </div>
+            <div class="caption">
+                <p class="rate">
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon type='solid' name='star'></box-icon>
+                </p>
+                <p class="productName">Sweater</p>
+                <p class="price">$25.00</p>
+            </div>
+            <button class="buy">Buy Now</button>
+            
+        </div>
+        <div class="card3">
+            <div class="image">
+                <img src="Images/orange shorts.jpg" alt="">
+            </div>
+            <div class="caption">
+                <p class="rate">
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon type='solid' name='star'></box-icon>
+                    <box-icon type='solid' name='star'></box-icon>
+                </p>
+                <p class="productName">Women's Shorts</p>
+                <p class="price">$30.00</p>
+            </div>
+            <button class="buy">Buy Now</button>
+            
+        </div>
+    </main>
+    
+    
 </body>
 </html>

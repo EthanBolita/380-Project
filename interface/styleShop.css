@@ -1,0 +1,97 @@
+main{
+    max-width: 1500px;
+    width: 95%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+main .card1{
+    max-width: 200px;
+    flex: 1 1 210px;
+    text-align: center;
+    height: 300px;
+    border: 2px solid black;
+    margin: 20px;
+}
+
+main .card1 .image{
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+main .card1 .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .card1 .caption{
+    padding-left: 1em;
+    text-align: left;
+    line-height: 1em;
+    height: 25%;
+}
+main .card1 .caption p{
+    font-size: 1rem;
+}
+
+main .card2{
+    max-width: 300px;
+    flex: 1 1 210px;
+    text-align: center;
+    height: 500px;
+    border: 2px solid black;
+    margin: 20px;
+}
+main .card2 .image{
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+main .card2 .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .card2 .caption{
+    padding-left: 1em;
+    text-align: left;
+    line-height: 3em;
+    height: 25%;
+}
+main .card2 .caption p{
+    font-size: 1.5rem;
+}
+main .card3{
+    max-width: 300px;
+    flex: 1 1 210px;
+    text-align: center;
+    height: 500px;
+    border: 2px solid black;
+    margin: 20px;
+}
+
+main .card3 .image{
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+main .card3 .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .card3 .caption{
+    padding-left: 1em;
+    text-align: left;
+    line-height: 3em;
+    height: 25%;
+}
+main .card3 .caption p{
+    font-size: 1.5rem;
+}

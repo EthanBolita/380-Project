@@ -1,10 +1,10 @@
 private class creditCard{
-   String customerName;
-   String cardNumber;
-   String CCV;
-   int month;
-   int year;
-   int age;
+  String customerName;
+  String cardNumber;
+  String CCV;
+  int month;
+  int year;
+  int age;
   //bigbrrr
   public void verify(){
     if (cardNumber.matches ("[0-9]+") && cardNumber.length() == 11){

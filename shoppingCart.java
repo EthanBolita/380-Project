@@ -2,14 +2,6 @@ import java.util.*;
 public class shoppingCart{
   ArrayList<product> products= new ArrayList<product>();
   double totalCost=0;
-  //String product;
-  //int quantity;
-  public shoppingCart(){
-    //this.product=product;
-    //this.productCost=productCost;
-    //this.quantity=quantity;
-  }
-
 
   public void addToCart(product item){
     products.add(item);
@@ -27,7 +19,7 @@ public class shoppingCart{
   }
 
   public double getTotal(){
-      return totalCost;
+    return totalCost;
   }
 
   public String printContent(){

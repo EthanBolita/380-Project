@@ -1,3 +1,10 @@
+/**
+ * This is the customer class, which stores the variables needed for
+ * the customer, like: name, address, etc.
+ * @ authors: Michael and Ethan
+ * @ version: 5 
+ */
+
 public class cutomer{
     String name;
     String address;

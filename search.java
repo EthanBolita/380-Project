@@ -1,15 +1,27 @@
-import java.util.Scanner;
+/**
+ * This is the search class, which takes in the user's input from the search bar,
+ * and returns items from the database that match with the user's input.
+ * @ authors: Michael and Ethan
+ * @ version: 10 
+ */ 
 
+import java.util.Scanner;
 public class search{
     String size;
     String style;
     String color;
+
+    /**
+     * Search class constructor: it takes in the size: (small, medium, or large), 
+     * style: (shirt, pants, or sweater), and color: (red, gray, or black).
+     */ 
 
     public search(String size, String style, String color){
         this.size=size;
         this.style=style;
         this.color=color;
     }
+    
     public String getSize(){
         return size;
     }
@@ -22,7 +34,6 @@ public class search{
         return color;
     }
 
-
     public void setSize(String size){
         this.size=size;
     }
@@ -32,6 +43,13 @@ public class search{
     public void setColor(String color){
         this.color=color;
     }
+
+    /**
+     * splitString method: it takes in a user's input from the search bar and separates
+     * each word into a String array. It checks if the words are any of the accepted
+     * values: (red, gray, grey, black, small, medium, large, shirt, sweater, or pants),
+     * and sets the objects color, style, and size values accordingly.
+     */
 
     public void splitString(String input){
         String [] words=input.split(" ");
@@ -60,6 +78,10 @@ public class search{
             }
         }
     }
+
+    /**
+     * toString method: it returns the object's size, color, and style.
+     */
 
     public String toString(){
         String value="";

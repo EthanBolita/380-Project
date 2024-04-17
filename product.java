@@ -1,3 +1,10 @@
+/**
+ * This is the product class, which stores the variables needed
+ * for the products
+ * @ authors: Michael
+ * @ version: 5 
+ */
+
 public class product{
    int id;
    String color;

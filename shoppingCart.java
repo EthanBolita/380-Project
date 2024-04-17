@@ -1,12 +1,30 @@
+/**
+ * This is the shoppingCart class, which stores the customer's products stored in the cart,
+ * and allows the user to add and remove items from the cart.
+ * It calculates the total of all the products.
+ * @ authors: Michael and Ethan
+ * @ version: 11 
+ */
+
 import java.util.*; 
 public class shoppingCart{
   ArrayList<product> products= new ArrayList<product>();
   double totalCost=0;
 
+  /**
+   * addToCartethod: it takes in a product and adds it to the object's
+   * products arraylist, and increases the object's totalCost variable.
+   */
+
   public void addToCart(product item){
     products.add(item);
     totalCost+=item.getPrice();
   }
+
+  /**
+   * remove method: it takes in a product and removes it from the object's
+   * products arraylist, and decreases the totalCost variable.
+   */
 
   public void remove(product item){
     for(int i=0; i<products.size();i++){
@@ -21,6 +39,11 @@ public class shoppingCart{
   public double getTotal(){
     return totalCost;
   }
+
+  /**
+   * printContent method: it returns all the variables of the all
+   * the products stored in the arraylist.
+   */
 
   public String printContent(){
     String value="";

@@ -1,3 +1,10 @@
+/**
+ * This is the EmailSystem class, which sends a verification email to a user after
+ * successfully purchasing products from the store.
+ * @ authors: Lyle
+ * @ version: 2 
+ */
+
 import java.util.Properties;
 import javax.mail.*;
 import javax.mail.internet.*;
@@ -6,6 +13,11 @@ public class EmailSystem {
 
     private String fromEmail; // Sender's email ID
     private String password;  // Sender's email password for SMTP authentication
+
+    /**
+     * EmailSystem class constructor: it takes in the sender's email ID
+     * and the sender's email password for SMTP authentication
+     */
 
     public EmailSystem(String fromEmail, String password) {
         this.fromEmail = fromEmail;

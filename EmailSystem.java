@@ -24,6 +24,12 @@ public class EmailSystem {
         this.password = password;
     }
 
+    /**
+     * sendOrderUpdate method: it takes in the user's email, the subject of the email, 
+     * and the email's message. This method creates an automated email and sends it to
+     * the user.
+     */
+
     public void sendOrderUpdate(String toEmail, String subject, String messageBody) {
         // Assuming you're using SMTP server of Gmail
         String host = "smtp.gmail.com";

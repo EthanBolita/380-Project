@@ -6,7 +6,7 @@
 }
 body{
     font-family: "Oswald", sans-serif;
-
+    
   
 }
 .navbar{
@@ -35,11 +35,11 @@ nav ul li{
 a{
     text-decoration: none;
     color:#555;
-    backface-visibility: var(transparent);
+    
 }
 p{
     color: #555;
-    backface-visibility: var(transparent);
+    
 }
 .header{
     background: radial-gradient(#f95a5a,rgb(69, 69, 69)
@@ -266,6 +266,8 @@ p{
 .cover {
     
     margin-top: 25%;
+    margin-bottom: 25%;
+    margin-left: 5%;
     background-image: url("Images/carpic.png");
     background-size: cover;
     height: 25vh;
@@ -286,11 +288,40 @@ p{
 }
 
 .section-heading{
-    max-width: 45%;
-    font-size: 22px;
-    margin: 5%;
+    max-width: 60%;
+    font-size: 18px;
+    
     color: #000000;
-    translate: 110% -110%;
+    translate: 180% -80%;
 }
+
+
+.q {
+    translate: 100% -30%;
+    margin-top: 25%;
+    margin-bottom: 25%;
+    margin-left: 5%;
+    
+    background-size: 50%;
+    height: 80vh;
+    width: 70vh;
+    background-position: center;
+    border-radius: 1px;
+    
+}
+.q--overlay{
+    background: rgba(0, 0, 0, 0.6);
+    height: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 300px;
+}
+.q--overlay .h1{
+    text-align: justify;
+}
+
 
 

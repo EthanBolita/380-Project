@@ -13,7 +13,7 @@ main .card1{
     flex: 1 1 210px;
     text-align: center;
     height: 300px;
-    border: 2px solid black;
+    border: 1px solid black;
     margin: 20px;
 }
 
@@ -39,13 +39,14 @@ main .card1 .caption p{
 }
 
 main .card2{
-    max-width: 300px;
+    max-width: 200px;
     flex: 1 1 210px;
     text-align: center;
-    height: 500px;
-    border: 2px solid black;
+    height: 300px;
+    border: 1px solid black;
     margin: 20px;
 }
+
 main .card2 .image{
     height: 50%;
     margin-bottom: 20px;
@@ -60,18 +61,18 @@ main .card2 .image img{
 main .card2 .caption{
     padding-left: 1em;
     text-align: left;
-    line-height: 3em;
+    line-height: 1em;
     height: 25%;
 }
 main .card2 .caption p{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 main .card3{
-    max-width: 300px;
+    max-width: 200px;
     flex: 1 1 210px;
     text-align: center;
-    height: 500px;
-    border: 2px solid black;
+    height: 300px;
+    border: 1px solid black;
     margin: 20px;
 }
 
@@ -89,9 +90,21 @@ main .card3 .image img{
 main .card3 .caption{
     padding-left: 1em;
     text-align: left;
-    line-height: 3em;
+    line-height: 1em;
     height: 25%;
 }
 main .card3 .caption p{
-    font-size: 1.5rem;
+    font-size: 1rem;
+}
+.buynowBtn{
+    display: inline-block;
+    background: #000000;
+    color: #fff;
+    padding: 8px 20px;
+    margin: 8px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.buynowBtn:hover{
+ background: #563434;
 }

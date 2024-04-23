@@ -2,6 +2,7 @@
  * This is the product class, which stores the variables needed
  * for the products
  * @ authors: Michael
+ * @ date of oldest edition: April 9
  * @ version: 5 
  */
 

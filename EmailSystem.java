@@ -2,6 +2,7 @@
  * This is the EmailSystem class, which sends a verification email to a user after
  * successfully purchasing products from the store.
  * @ authors: Lyle
+ * @ date of oldest edition: April 15
  * @ version: 2 
  */
 

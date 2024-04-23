@@ -3,6 +3,7 @@
  * manager, and allows the user to add and remove objects in the
  * inventory.
  * @ authors: Michael and Ethan
+ * @ date of oldest edition: April 3
  * @ version: 6 
  */
 

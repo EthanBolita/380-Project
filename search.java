@@ -2,6 +2,7 @@
  * This is the search class, which takes in the user's input from the search bar,
  * and returns items from the database that match with the user's input.
  * @ authors: Michael and Ethan
+ * @ date of oldest edition: April 3rd 
  * @ version: 10 
  */ 
 

@@ -3,6 +3,7 @@
  * credit card information, and verifies if the information
  * is acceptable for a credit card.
  * @ authors: Ethan
+ * @ date of oldest edition: April 9
  * @ version: 5 
  */
 

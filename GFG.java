@@ -1,3 +1,11 @@
+/**
+ * This is the GFG class, which uses the connection between 
+ * the java code and the database to pull up the tables from
+ * the database.
+ * @ authors: Ethan
+ * @ date of oldest edition: April 12 
+ * @ version: 3 
+ */
 import java.sql.*;
 import java.util.Scanner;
 

@@ -3,6 +3,7 @@
  * and allows the user to add and remove items from the cart.
  * It calculates the total of all the products.
  * @ authors: Michael and Ethan
+ * @ date of oldest edition: March 26
  * @ version: 11 
  */
 

@@ -6,7 +6,8 @@
  * @ version: 2 
  */
 
-package src;
+//package src;
+
 import java.util.Properties;
 import javax.mail.*;
 import javax.mail.internet.*;

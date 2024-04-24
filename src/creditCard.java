@@ -7,8 +7,8 @@
  * @ version: 5 
  */
 
-package src;
-private class creditCard{
+//package src;
+public class creditCard{
   String customerName;
   String cardNumber;
   String CCV;
@@ -27,22 +27,22 @@ private class creditCard{
 
   public void verify(){
     if (cardNumber.matches ("[0-9]+") && cardNumber.length() == 11){
-      cardNumber=cardNumber;
+      //cardNumber=cardNumber;
     }else{
       System.out.println("Invalid. Try again");
     }
     if (customerName.matches("[a-zA-Z]+")){
-      customerName=customerName;
+      //customerName=customerName;
     }else{
       System.out.println("Invalid. Try again");
     }
     if (CCV.matches ("[0-9]+") && CCV.length() == 2){
-      CCV=CCV;
+      //CCV=CCV;
     }else{
       System.out.println("Invalid. Try again");
     }
     if (month > 0 && month < 13){
-      month=month;
+      //month=month;
     }else{
       System.out.println("Invalid. Try again");
     }

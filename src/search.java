@@ -6,7 +6,7 @@
  * @ version: 10 
  */ 
 
-package src;
+//package src;
 import java.util.Scanner;
 public class search{
     String size;

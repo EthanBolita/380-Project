@@ -7,10 +7,9 @@
  * @ version: 6 
  */
 
-package src;
+//package src;
 import java.util.*;
 
-import product;
 public class manager{
    String managerName;
    String managerAddress;

@@ -5,7 +5,7 @@
  * @ date of oldest edition: April 9
  * @ version: 5 
  */
-package src;
+//package src;
 public class product{
    int id;
    String color;

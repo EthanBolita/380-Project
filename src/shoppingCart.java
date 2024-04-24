@@ -7,10 +7,10 @@
  * @ version: 11 
  */
 
-package src;
+//package src;
 import java.util.*;
 
-import src.product; 
+//import src.product; 
 public class shoppingCart{
   ArrayList<product> products= new ArrayList<product>();
   double totalCost=0;

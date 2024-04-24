@@ -6,7 +6,7 @@
  * @ version: 5 
  */
 
-package src;
+//package src;
 public class customer{
     String name;
     String address;
